@@ -29,4 +29,5 @@ def get_response():
     return jsonify(response_message)
 
 if __name__ == '__main__':
+    # Debug mode should be set to False in production
     app.run(debug=True, port=8000)

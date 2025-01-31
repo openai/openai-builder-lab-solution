@@ -144,4 +144,5 @@ def plan_itinerary():
     return jsonify({"itinerary": completion.choices[0].message.content})
 
 if __name__ == '__main__':
+    # Debug mode should be set to False in production
     app.run(debug=True, port=8000)
